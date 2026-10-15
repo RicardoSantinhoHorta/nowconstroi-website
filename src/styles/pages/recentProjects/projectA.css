@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    color: #151515;
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+.project-page {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.project-introduction {
+    max-width: 1200px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.project-category {
+    margin-bottom: 18px;
+
+    color: #0f0867;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.project-introduction h1 {
+    margin-bottom: 12px;
+
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    font-weight: 700;
+}
+
+.project-location {
+    margin-bottom: 35px;
+
+    color: #777777;
+    font-size: 1.05rem;
+}
+
+.project-description {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: #575757;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.project-information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    margin-bottom: 80px;
+}
+
+.information-card {
+    min-height: 145px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid #dedede;
+    border-radius: 14px;
+    background-color: #ffffff;
+}
+
+.information-label {
+    color: #777777;
+    font-size: 0.9rem;
+}
+
+.information-card strong {
+    color: #0f0867;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.solid {
+    width: 100%;
+    margin: 0 auto 80px;
+
+    border: none;
+    border-top: 1px solid #d5d5d5;
+}
+
+.gallery-section {
+    margin-bottom: 100px;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-number {
+    margin-bottom: 5px;
+
+    color: #0f0867;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 700;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(250px, 100%), 1fr)
+    );
+    gap: 22px;
+}
+
+.gallery-image {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #eeeeee;
+}
+
+.gallery-image img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+
+    display: block;
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.gallery-image:hover img {
+    transform: scale(1.03);
+}
+
+.interventions {
+    margin-bottom: 80px;
+}
+
+.interventions-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+
+    list-style: none;
+    border-top: 1px solid #dddddd;
+}
+
+.interventions-list li {
+    position: relative;
+
+    padding: 22px 22px 22px 35px;
+    border-bottom: 1px solid #dddddd;
+
+    color: #444444;
+    font-size: 1rem;
+}
+
+.interventions-list li::before {
+    content: "→";
+
+    position: absolute;
+    left: 0;
+
+    color: #0f0867;
+    font-weight: 700;
+}
+
+.back-link {
+    display: inline-block;
+
+    color: #0f0867;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .project-information {
+        grid-template-columns: 1fr;
+    }
+
+    .interventions-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        min-height: 75px;
+        padding: 18px 24px;
+    }
+
+    .logo {
+        width: 230px;
+    }
+
+    .project-page {
+        width: min(100% - 36px, 1200px);
+        padding: 60px 0;
+    }
+
+    .project-introduction {
+        margin-bottom: 45px;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+
+    .project-information {
+        margin-bottom: 60px;
+    }
+
+    .solid {
+        margin-bottom: 60px;
+    }
+
+    .gallery-section {
+        margin-bottom: 70px;
+    }
+
+    .images-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+}

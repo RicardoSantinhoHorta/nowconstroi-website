@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Contactos - Now.Constroi</title>
+    <link rel="icon" type="image/png" href="../assets/images/shared/ico/32x32/logo_helmet_only_fundo_azul.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/global.css"/>
+    <link rel="stylesheet" href="../styles/pages/contacts.css"/>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../../index.html"><img src="../assets/images/shared/NowConstroi300x40.png" class="logo-header"></a><!--Mudar-->
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <!--
+          <li><a href="src/pages/projects.html">Projetos</a></li>~
+            -->
+          <li><a href="about.html">Sobre nós</a></li>
+          <li><a href="contacts.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contacts-page">
+
+    <!-- INTRODUÇÃO -->
+    <section class="contacts-intro">
+
+        <span class="section-label">CONTACTOS</span>
+
+        <h1>
+            Vamos falar sobre<br>
+            o seu próximo projeto.
+        </h1>
+
+        <div class="contacts-intro-content">
+
+            <h2>
+                Tem uma obra em mente?<br>
+                Fale connosco.
+            </h2>
+
+            <p>
+                Quer se trate de uma construção, reabilitação ou de uma
+                intervenção específica, estamos disponíveis para conhecer
+                o seu projeto e perceber de que forma podemos ajudar.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTOS + FORMULÁRIO -->
+    <section class="contact-section">
+
+        <!-- INFORMAÇÕES -->
+        <div class="contact-information">
+
+            <span class="section-label">FALE CONNOSCO</span>
+
+            <h2>Estamos disponíveis para o ajudar.</h2>
+
+            <div class="contact-details">
+
+                <!-- TELEFONE
+                <div class="contact-item">
+
+                    <span class="contact-number">01</span>
+
+                    <div>
+                        <p class="contact-label">Telefone</p>
+
+                        <a href="tel:+351XXXXXXXXX">
+                            +351 XXX XXX XXX
+                        </a>
+                    </div>
+
+                </div>
+                -->
+
+
+                <!-- EMAIL -->
+                <div class="contact-item">
+                    <!--
+                    <span class="contact-number">01</span>
+                    -->
+                    <div>
+                        <p class="contact-label">Email</p>
+
+                        <a href="mailto:geral@nowconstroi.com">
+                            geral@nowconstroi.com
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- ESCRITÓRIO
+                <div class="contact-item">
+
+                    <span class="contact-number">03</span>
+
+                    <div>
+                        <p class="contact-label">Escritório</p>
+
+                        <p class="contact-value">
+                            Rua tal tal tal<br>
+                            XXXX-XXX Rio de Mouro
+                        </p>
+                    </div>
+
+                </div>
+                -->
+
+
+                <!-- HORÁRIO
+                <div class="contact-item">
+
+                    <span class="contact-number">04</span>
+
+                    <div>
+                        <p class="contact-label">Horário</p>
+
+                        <p class="contact-value">
+                            Segunda a Sexta<br>
+                            09:00 — 18:00
+                        </p>
+                    </div>
+
+                </div>
+                 -->
+
+            </div>
+
+        </div>
+
+
+        <!-- FORMULÁRIO -->
+        <div class="contact-form-container">
+
+            <span class="section-label">O SEU PROJETO</span>
+
+            <h2>Conte-nos o que pretende.</h2>
+
+            <form class="contact-form">
+
+                <!-- NOME -->
+                <div class="form-group">
+
+                    <label for="name">
+                        Nome
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="O seu nome"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL + TELEFONE -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="email@exemplo.pt"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Telefone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+351"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- TIPO DE PROJETO -->
+                <div class="form-group">
+
+                    <label for="project-type">
+                        Tipo de projeto
+                    </label>
+
+                    <select
+                        id="project-type"
+                        name="project-type"
+                    >
+
+                        <option value="" selected disabled>
+                            Selecione uma opção
+                        </option>
+
+                        <option value="construction">
+                            Construção
+                        </option>
+
+                        <option value="rehabilitation">
+                            Reabilitação
+                        </option>
+
+                        <option value="remodeling">
+                            Remodelação
+                        </option>
+
+                        <option value="other">
+                            Outro
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- LOCALIZAÇÃO -->
+                <div class="form-group">
+
+                    <label for="location">
+                        Localização da obra
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                        placeholder="Ex: Lisboa"
+                    >
+
+                </div>
+
+
+                <!-- MENSAGEM -->
+                <div class="form-group">
+
+                    <label for="message">
+                        Fale-nos sobre o projeto
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Descreva brevemente o trabalho que pretende realizar..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    Enviar pedido
+
+                    <span>→</span>
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ÚLTIMA SECÇÃO -->
+    <section class="contact-bottom">
+
+        <span class="section-label">
+            NOW.CONSTROI
+        </span>
+
+        <h2>
+            Cada projeto começa<br>
+            com uma conversa.
+        </h2>
+
+        <a href="tel:+351XXXXXXXXX">
+            Ligue-nos
+            <span>→</span>
+        </a>
+
+    </section>
+
+  </main>
+
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="../assets/images/shared/LogoGSH_Branco-01.svg" alt="long svg" class="logo-footer"><!--Mudar-->
+          <p>Não espere pelo futuro, crie-o.</p>
+        </div>
+        <div class="col">
+          <p class="email-id">geral@nowconstroi.com</p>
+        </div>
+        <div class="col">
+          <h3>Links<div class="underline"></div></h3>
+          <ul>
+            <li><a href="../../index.html">Página principal</a></li>
+            <!--<li><a href="projects.html">Projetos</a></li>-->
+            <li><a href="about.html">Sobre nós</a></li>
+            <li><a href="contacts.html">Contactos</a></li>
+          </ul>
+        </div>
+        <!--
+        <div class="col">
+          <h3>Redes Sociais<div class="underline"></div></h3>
+          <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">LinkedIn</a></li>
+            <li><a href="">Youtube</a></li>
+          </ul>
+        </div>
+        -->
+      </div>
+      <hr>
+      <p class="copyright">&copy; 2026 Now.Constroi. Todos os direitos reservados.<a href="conditions.html">  Termos e Condições </a>& <a href="privacy.html">  Política de Privacidade</a></p><!--Mudar-->
+    
+    </footer>
+
+
+    <script src="../scripts/shared/mobile-navbar.js"></script>
+    <script src="../scripts/pages/contact-form.js"></script>
+  </body>
+</html>

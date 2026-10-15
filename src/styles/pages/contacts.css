@@ -1,0 +1,510 @@
+/* =========================
+   CONTACTS PAGE
+========================= */
+
+.contacts-page {
+    font-family: "Manrope", sans-serif;
+    color: #161616;
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   GERAL
+========================= */
+
+.section-label {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #0f0867;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.18rem;
+}
+
+
+/* =========================
+   INTRODUÇÃO
+========================= */
+
+.contacts-intro {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 150px 30px 120px;
+}
+
+
+.contacts-intro > h1 {
+    max-width: 950px;
+
+    margin-bottom: 90px;
+
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-weight: 600;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.15rem;
+}
+
+
+.contacts-intro-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    padding-top: 50px;
+
+    border-top: 1px solid #d8d8d8;
+}
+
+
+.contacts-intro-content h2 {
+    max-width: 500px;
+
+    font-size: 1.7rem;
+    font-weight: 600;
+
+    line-height: 1.35;
+}
+
+
+.contacts-intro-content p {
+    max-width: 500px;
+
+    color: #5e5e5e;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   SECÇÃO PRINCIPAL
+========================= */
+
+.contact-section {
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: 100px;
+
+    padding:
+        110px
+        max(30px, calc((100% - 1140px) / 2));
+
+    background-color: #f5f5f5;
+}
+
+
+/* =========================
+   INFORMAÇÃO DE CONTACTO
+========================= */
+
+.contact-information h2 {
+    max-width: 500px;
+
+    margin-bottom: 60px;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+.contact-details {
+    border-top: 1px solid #cccccc;
+}
+
+
+.contact-item {
+    display: grid;
+
+    grid-template-columns: 50px 1fr;
+
+    gap: 15px;
+
+    padding: 28px 0;
+
+    border-bottom: 1px solid #cccccc;
+}
+
+
+.contact-number {
+    color: #0f0867;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.08rem;
+}
+
+
+.contact-label {
+    margin-bottom: 6px;
+
+    color: #777777;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    letter-spacing: 0.08rem;
+
+    text-transform: uppercase;
+}
+
+
+.contact-item a,
+.contact-value {
+    color: #161616;
+
+    font-size: 1.05rem;
+    font-weight: 500;
+
+    line-height: 1.6;
+}
+
+
+.contact-item a:hover {
+    color: #0f0867;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+.contact-form-container {
+    padding: 45px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e0e0e0;
+}
+
+
+.contact-form-container h2 {
+    margin-bottom: 45px;
+
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 600;
+}
+
+
+.contact-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 28px;
+}
+
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.form-group label {
+    margin-bottom: 10px;
+
+    color: #333333;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 15px 0;
+
+    border: none;
+
+    border-bottom: 1px solid #cfcfcf;
+
+    outline: none;
+
+    color: #161616;
+
+    background-color: transparent;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 0.95rem;
+
+    transition: border-color 0.2s ease;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-bottom-color: #0f0867;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaaaaa;
+}
+
+
+.form-group select {
+    cursor: pointer;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.submit-button {
+    align-self: flex-start;
+
+    display: flex;
+    align-items: center;
+
+    gap: 45px;
+
+    margin-top: 10px;
+
+    padding: 17px 24px;
+
+    border: 1px solid #0f0867;
+
+    color: #ffffff;
+
+    background-color: #0f0867;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.submit-button span {
+    font-size: 1.1rem;
+}
+
+
+.submit-button:hover {
+    color: #0f0867;
+
+    background-color: #ffffff;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   SECÇÃO FINAL
+========================= */
+
+.contact-bottom {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding:
+        90px
+        max(30px, calc((100% - 1140px) / 2));
+
+    color: #ffffff;
+
+    background-color: #0f0867;
+}
+
+
+.contact-bottom .section-label {
+    color: #b9b6e5;
+}
+
+
+.contact-bottom h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+
+.contact-bottom a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 18px 25px;
+
+    color: #0f0867;
+
+    background-color: #ffffff;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.contact-bottom a:hover {
+    opacity: 1;
+
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    .contacts-intro {
+        padding-top: 130px;
+    }
+
+
+    .contacts-intro > h1 {
+        margin-bottom: 60px;
+    }
+
+
+    .contacts-intro-content {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .contact-section {
+        grid-template-columns: 1fr;
+
+        gap: 70px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-form-container {
+        padding: 35px 25px;
+    }
+
+
+    .contact-bottom {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .contacts-intro {
+        padding:
+            120px
+            20px
+            80px;
+    }
+
+
+    .contacts-intro > h1 {
+        letter-spacing: -0.08rem;
+    }
+
+
+    .contact-section {
+        padding:
+            80px
+            20px;
+    }
+
+
+    .contact-form-container {
+        padding: 30px 20px;
+    }
+
+
+    .contact-item {
+        grid-template-columns: 35px 1fr;
+    }
+
+
+    .contact-bottom {
+        padding:
+            70px
+            20px;
+    }
+
+
+    .submit-button {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+
+    .contact-bottom a {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+}
